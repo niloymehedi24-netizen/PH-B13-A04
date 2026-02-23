@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome added -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- daisy UI + tailwind added -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -21,11 +23,11 @@
 </head>
 <body>
     <header class="w-[1100px] mx-auto">
-        <h1 class="text-black-500 font-bold pt-14 pb-5">Job Application Tracker</h1>
+        <h1 class="text-[#002C5C] font-bold pt-14 pb-5 text-3xl">Job Application Tracker</h1>
         <div class="apply-info grid grid-cols-3 gap-4">
             <div class="bg-base-200 p-5 rounded-md">
                 <p class="text-sm font-light">Total</p>
-                <h2 id="totalCount" class="text-black-500 text-xl font-bold">8</h2>
+                <h2 id="totalCount" class="text-[#002C5C] text-xl font-bold">8</h2>
             </div>
             <div class="bg-base-200 p-5 rounded-md">
                 <p class="text-sm font-light">Interview</p>
@@ -36,6 +38,49 @@
                 <h2 id="rejectedCount" class="text-[#EF4444] text-xl font-bold">0</h2>
             </div>
         </div>
+        <hr class="my-7">
     </header>
+
+    <main class="w-[1100px] mx-auto">
+        <div class="flex items-center justify-between mb-6">
+                <h3 class="text-[#002C5C] font-bold text-xl">Available Jobs</h3>
+                <span class="text-sm font-light text-[#64748B]">8 jobs</span>
+        </div>
+        <div>
+            <button id="all-btn" class="w-[80px] p-2 text-[#ffffff] text-[12px] rounded-md bg-[#3B82F6] gap-2">All</button>
+            <button id="interview-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2">Interview</button>
+            <button id="rejected-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2">Rejected</button>
+        </div>
+
+        <section id="allJobs">
+            <div class="jobs flex justify-between">
+                <div class="space-y-5 p-6">
+                    <div>
+                        <p class="jobName text-[#002C5C] font-bold text-lg">Mobile First Corp</p>
+                        <p class="jobRole text-sm font-light text-[#64748B]">React Native Developer</p>
+                    </div>
+                    <div class="job-ops text-xs font-light text-[#64748B]">
+                        <span>Remote</span>
+                        <span>•</span>
+                        <span>Full-time</span>
+                        <span>•</span>
+                        <span>$130,000 - $175,000</span>
+                    </div>
+                    <div>
+                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
+                        <p class="text-xs font-light text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                    </div>
+                    <div>
+                        <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2">INTERVIEW</button>
+                        <button class="btn-rejected w-[100px] h-[40px] border border-[#EF4444] font-semibold text-[14px] rounded-md text-[#EF4444] gap-2">REJECTED</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="btn-delete border border-[#F1F2F4] bg-[#F1F2F4] rounded-full"><i class="fa-regular fa-trash-can"></i></span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
