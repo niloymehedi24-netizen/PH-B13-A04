@@ -27,7 +27,7 @@
         <div class="apply-info grid grid-cols-3 gap-4">
             <div class="bg-base-200 p-5 rounded-md">
                 <p class="text-sm font-light">Total</p>
-                <h2 id="totalCount" class="text-[#002C5C] text-xl font-bold">8</h2>
+                <h2 id="totalCount" class="text-[#002C5C] text-xl font-bold">0</h2>
             </div>
             <div class="bg-base-200 p-5 rounded-md">
                 <p class="text-sm font-light">Interview</p>
@@ -47,9 +47,9 @@
                 <span class="text-sm font-light text-[#64748B]">8 jobs</span>
         </div>
         <div class="mb-4">
-            <button id="all-btn" class="w-[80px] p-2 text-[#ffffff] text-[12px] rounded-md bg-[#3B82F6] gap-2 hover:cursor-pointer">All</button>
-            <button id="interview-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2 hover:cursor-pointer">Interview</button>
-            <button id="rejected-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2 hover:cursor-pointer">Rejected</button>
+            <button onclick="toggleStyle('all-btn')" id="all-btn" class="w-[80px] p-2 text-[#ffffff] text-[12px] rounded-md bg-[#3B82F6] gap-2 hover:cursor-pointer">All</button>
+            <button onclick="toggleStyle('interview-btn')" id="interview-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2 hover:cursor-pointer">Interview</button>
+            <button onclick="toggleStyle('rejected-btn')" id="rejected-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2 hover:cursor-pointer">Rejected</button>
         </div>
 
         <section id="allJobs">
@@ -272,7 +272,7 @@
         </section>
     </main>
 
-    <section class="w-[1100px] mx-auto">
+    <!-- <section class="w-[1100px] mx-auto">
         <h1 class="text-[#002C5C] font-bold pt-14 pb-5 text-3xl">Job Application Tracker</h1>
         <div class="apply-info grid grid-cols-3 gap-4">
             <div class="bg-base-200 p-5 rounded-md">
@@ -302,6 +302,8 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+<script src="/script.js"></script>
 </body>
 </html>
