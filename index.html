@@ -52,12 +52,17 @@
             <button onclick="toggleStyle('rejected-btn')" id="rejected-btn" class="w-[80px] p-2 text-[#64748B] text-[12px] rounded-md bg-base-200 gap-2 hover:cursor-pointer">Rejected</button>
         </div>
 
+        <!-- filtered jobs -->
+        <section id="filtered-section" class="hidden">
+
+        </section>
+
         <section id="allJobs">
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">Mobile First Corp</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">React Native Developer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">Mobile First Corp</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">React Native Developer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Remote</span>
@@ -67,8 +72,8 @@
                         <span>$130,000 - $175,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -83,8 +88,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">WebFlow Agency</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">Web Designer & Developer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">WebFlow Agency</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">Web Designer & Developer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Los Angeles, CA</span>
@@ -94,8 +99,8 @@
                         <span>$80,000 - $120,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -110,8 +115,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">DataViz Solutions</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">Data Visualization Specialist</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">DataViz Solutions</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">Data Visualization Specialist</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Boston, MA</span>
@@ -121,8 +126,8 @@
                         <span>$125,000 - $165,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -137,8 +142,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">CloudFirst Inc</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">Backend Developer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">CloudFirst Inc</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">Backend Developer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Seattle, WA</span>
@@ -148,8 +153,8 @@
                         <span>$140,000 - $190,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -164,8 +169,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">Innovation Labs</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">UI/UX Engineer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">Innovation Labs</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">UI/UX Engineer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Austin, TX</span>
@@ -175,8 +180,8 @@
                         <span>$110,000 - $150,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -191,8 +196,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">MegaCorp Solutions</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">JavaScript Developer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">MegaCorp Solutions</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">JavaScript Developer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>New York, NY</span>
@@ -202,8 +207,8 @@
                         <span>$130,000 - $170,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -218,8 +223,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md mb-4 p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">StartupXYZ</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">Full Stack Engineer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">StartupXYZ</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">Full Stack Engineer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>Remote</span>
@@ -229,8 +234,8 @@
                         <span>$120,000 - $160,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
@@ -245,8 +250,8 @@
             <div class="jobs flex justify-between bg-base-200 rounded-md p-5">
                 <div class="space-y-5 mb-4">
                     <div>
-                        <p class="jobName text-[#002C5C] font-bold text-lg">TechCorp Industries</p>
-                        <p class="jobRole text-sm font-light text-[#64748B]">Senior Frontend Developer</p>
+                        <p class="job-name text-[#002C5C] font-bold text-lg">TechCorp Industries</p>
+                        <p class="job-role text-sm font-light text-[#64748B]">Senior Frontend Developer</p>
                     </div>
                     <div class="job-ops text-xs font-light text-[#64748B]">
                         <span>San Francisco, CA</span>
@@ -256,8 +261,8 @@
                         <span>$130,000 - $175,000</span>
                     </div>
                     <div>
-                        <p class="bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">Not Applied</p>
-                        <p class="text-xs font-light text-[#323B49]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">NOT APPLIED</p>
+                        <p class="notes text-xs font-light text-[#323B49]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                     </div>
                     <div>
                         <button class="btn-interview w-[100px] h-[40px] border border-[#10B981] font-semibold text-[14px] rounded-md text-[#10B981] gap-2 hover:cursor-pointer">INTERVIEW</button>
