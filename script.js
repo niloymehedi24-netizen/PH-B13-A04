@@ -65,15 +65,15 @@ mainContainer.addEventListener('click', function(event){
         const jobName = parentNode.querySelector('.job-name').innerText;
         const jobRole = parentNode.querySelector('.job-role').innerText;
         const jobOps = parentNode.querySelector('.job-ops').innerText;
-        const jobStatus = parentNode.querySelector('.status').innerText;
+        const jobRoles = parentNode.querySelector('.roles').innerText;
         const jobNotes = parentNode.querySelector('.notes').innerText;
 
-        parentNode.querySelector('.status').innerText = 'APPLIED';
+        parentNode.querySelector('.roles').innerText = 'APPLIED';
 
         const jobInfo = {jobName, 
         jobRole, 
         jobOps, 
-        jobStatus:'APPLIED', 
+        jobRoles:'APPLIED', 
         jobNotes
         };
 
@@ -99,15 +99,15 @@ mainContainer.addEventListener('click', function(event){
         const jobName = parentNode.querySelector('.job-name').innerText;
         const jobRole = parentNode.querySelector('.job-role').innerText;
         const jobOps = parentNode.querySelector('.job-ops').innerText;
-        const jobStatus = parentNode.querySelector('.status').innerText;
+        const jobRoles = parentNode.querySelector('.roles').innerText;
         const jobNotes = parentNode.querySelector('.notes').innerText;
 
-        parentNode.querySelector('.status').innerText = 'REJECT';
+        parentNode.querySelector('.roles').innerText = 'REJECT';
 
         const jobInfo = {jobName, 
         jobRole, 
         jobOps, 
-        jobStatus:'REJECT', 
+        jobRoles:'REJECT', 
         jobNotes
         };
 
@@ -149,7 +149,7 @@ function renderInterview (){
                         <span>$130,000 - $175,000</span>
                     </div>
                     <div>
-                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">${interview.jobStatus}</p>
+                        <p class="roles bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">${interview.jobRoles}</p>
                         <p class="notes text-xs font-light text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                     </div>
                     <div>
@@ -183,7 +183,7 @@ function renderRejected (){
                         <span>$130,000 - $175,000</span>
                     </div>
                     <div>
-                        <p class="status bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">${reject.jobStatus}</p>
+                        <p class="roles bg-[#EEF4FF] p-2 w-[100px] font-semibold text-[14px] text-[#002C5C] mb-2">${reject.jobRoles}</p>
                         <p class="notes text-xs font-light text-[#323B49]">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                     </div>
                     <div>
